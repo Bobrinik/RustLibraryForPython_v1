@@ -1,0 +1,15 @@
+[package]
+name = "RustLibraryForPythonv1"
+version = "0.1.0"
+authors = ["runner"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+name = "RustLibraryForPythonv1"
+crate-type = ["cdylib"]
+
+[dependencies.cpython]
+version = "0.5"
+features = ["extension-module"]
